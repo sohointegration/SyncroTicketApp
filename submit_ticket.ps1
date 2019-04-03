@@ -68,6 +68,16 @@ $Button.Add_Click(
 	$ticket = $myticket.ticket.number
 	$Label1.Text = "Creating Ticket"
 	Create-Syncro-Ticket-Comment -Subdomain "sohointegration" -TicketIdOrNumber $ticket -Subject "$varSubject" -Body "$varDescription1" -Hidden $False -DoNotEmail $False
+
+	###
+	#	Uncomment the following 3 lines if you want screenshots uploaded to the asset!
+	###
+
+	#Get-ScreenCapture -FullFileName "C:\windows\temp\screenshot.jpg"
+	#$Label1.Text = "Processing Screenshot"
+	#Upload-File -Subdomain "sohointegration" -FilePath "C:\windows\temp\screenshot.jpg"
+	
+	
 	$varIssue.Text = "  Please wait while we process your request....   "
 		
 	$Label1.Text = "Your Ticket Number is: $ticket"
