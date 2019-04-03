@@ -13,7 +13,9 @@ Once you have the exe file uploaded and you know the url location, you then need
 item as follows:
 
 Menu Type:  File
+
 Menu Title:  Open A Ticket (you can name this whatever you'd like)
+
 URL:  The url from above
 
 ** This is a work in progress 
